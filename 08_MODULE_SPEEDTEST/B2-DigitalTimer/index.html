@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="start()">Start Timer</button>
+    <button onclick="stop()">Stop Timer</button>
+    <button onclick="reset()">Reset Timer</button>
+    <h1 class="display">000:00</h1>
+  </body>
+  <script>
+    const display = document.querySelector(".display");
+
+    let seconds = 0;
+    let milliseconds = 0;
+
+    function start() {
+      setInterval(() => {
+        console.log(seconds + 1);
+      }, 1000);
+      display.innerHTML = seconds;
+    }
+
+    function stop() {
+      setInterval(() => {}, interval);
+    }
+
+    function reset() {
+      setInterval(() => {}, interval);
+    }
+  </script>
+</html>
